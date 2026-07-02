@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShoreFlowLabs | Advanced Flow Systems</title>
+    <title>ShoreFlowLabs</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -12,28 +12,32 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #3e5842; /* The green background */
             text-align: center;
         }
-        .container {
-            padding: 20px;
+        .container { padding: 20px; }
+        img { 
+            max-width: 450px; 
+            width: 100%; 
+            height: auto; 
         }
-        h1 {
-            font-size: 2.5rem;
-            color: #2c3e50;
-        }
-        p {
+        .downloads-link {
+            display: block;
+            margin-top: 40px;
+            color: #ffffff;
+            text-decoration: none;
             font-size: 1.2rem;
-            color: #7f8c8d;
+            opacity: 0.8;
         }
+        .downloads-link:hover { opacity: 1; text-decoration: underline; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>ShoreFlowLabs</h1>
-        <p>Advanced Flow Systems | Coming Soon</p>
-        <p><a href="downloads.html">Go to Downloads Section</a></p>
+        <!-- Ensure this file exists in your repository at images/logo.png -->
+        <img src="images/logo.png" alt="ShoreFlowLabs">
+        
+        <a href="downloads.html" class="downloads-link">Go to Downloads Section</a>
     </div>
 </body>
 </html>
