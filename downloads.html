@@ -12,50 +12,34 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #ffffff; /* Matches your index page */
             text-align: center;
         }
-        .container {
-            padding: 20px;
+        .container { padding: 20px; }
+        img { 
+            max-width: 450px; 
+            width: 100%; 
+            height: auto; 
         }
-        h1 {
-            font-size: 2.5rem;
-            color: #2c3e50;
-        }
-        p {
-            font-size: 1.2rem;
-            color: #7f8c8d;
-        }
-        .download-btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #2c3e50;
-            color: white;
+        .nav-link {
+            display: block;
+            margin-top: 40px;
+            color: #333333;
             text-decoration: none;
-            border-radius: 5px;
+            font-size: 1.2rem;
+            opacity: 0.8;
         }
+        .nav-link:hover { opacity: 1; text-decoration: underline; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Project Resources</h1>
-        <p>Available files and project assets for download.</p>
+        <!-- Logo file path is the same as index.html -->
+        <img src="images/logo.png" alt="ShoreFlowLabs">
         
-        <div>
-            <p><strong>Design Asset Pack</strong></p>
-            <a href="https://raw.githubusercontent.com/YourGitHubName/shoreflowlabs-site/main/assets.zip" class="download-btn" download>Download ZIP</a>
-        </div>
+        <!-- Add your download links below this line -->
         
-        <div style="margin-top: 30px;">
-            <p><strong>Documentation / Notes</strong></p>
-            <a href="https://raw.githubusercontent.com/YourGitHubName/shoreflowlabs-site/main/notes.pdf" class="download-btn" download>Download PDF</a>
-        </div>
-        
-        <div style="margin-top: 40px;">
-            <p><a href="index.html">Back to Home</a></p>
-        </div>
+        <a href="index.html" class="nav-link">Return to Home</a>
     </div>
 </body>
 </html>
