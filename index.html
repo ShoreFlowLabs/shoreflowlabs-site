@@ -12,8 +12,9 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #ffffff; /* Clean white background */
+            background-color: #ffffff;
             text-align: center;
+            position: relative; /* Added to position the footer */
         }
         .container { padding: 20px; }
         img { 
@@ -24,20 +25,33 @@
         .downloads-link {
             display: block;
             margin-top: 40px;
-            color: #333333; /* Dark text for readability */
+            color: #333333;
             text-decoration: none;
             font-size: 1.2rem;
             opacity: 0.8;
         }
         .downloads-link:hover { opacity: 1; text-decoration: underline; }
+        
+        /* New styling for your concept statement */
+        .concept-footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            font-size: 0.85rem;
+            color: #888888;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Ensure you upload the new logo to images/logo.png -->
         <img src="images/logo.png" alt="ShoreFlowLabs">
-        
         <a href="downloads.html" class="downloads-link">Go to Downloads Section</a>
+    </div>
+
+    <!-- The new disclaimer at the bottom of the page -->
+    <div class="concept-footer">
+        ShoreFlowLabs is still in concept, as an active, evolving project.
     </div>
 </body>
 </html>
